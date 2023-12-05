@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import '@fontsource/roboto/300.css';
+@import '@fontsource/roboto/500.css';
+@import '@fontsource/roboto/700.css';
+@import 'react-toastify/dist/ReactToastify.css';
+
+.ck.ck-balloon-panel {
+  z-index: 1300 !important;
+}

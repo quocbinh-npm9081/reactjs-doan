@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  reactjsstarter-release:
+    image: eztekdockerhub.azurecr.io/reactjsstarter-release
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ENV: production
+        MAX_OLD_SPACE_SIZE: 8192
+    command: [ nginx-debug, '-g', 'daemon off;' ]
